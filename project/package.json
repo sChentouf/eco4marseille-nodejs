@@ -4,7 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "babel src -d lib",
-    "test": "test"
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }
