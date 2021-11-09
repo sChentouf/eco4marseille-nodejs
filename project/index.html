@@ -66,7 +66,9 @@
       }
       p,
       label,
-      select {
+      select,
+      button,
+      a {
         font-family: "Mohave", sans-serif;
       }
 
@@ -97,6 +99,86 @@
       .txt_orange {
         color: #f05a24;
       }
+
+      
+.cliiink > img{
+    width: 20%;
+    padding: 5vh;
+}
+
+
+@media screen and (max-width: 812px) {
+
+    .cliiink > img{
+        width: 70%;
+        padding: 1.5vh;
+    }
+
+    header{
+        display: flex;
+    }
+    
+    .searchbar{
+        display: none;
+    }
+    
+    .dropbutton {
+        background-color: rgba(0, 191, 206,1);
+        opacity: 0.9;
+        color: white;
+        padding: 2vh;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        position: relative;
+       
+    }
+
+    /* .dropbutton:hover{
+        float: right;
+    } */
+    .drop{
+        position: relative;
+        display: inline-block;
+    }
+    .drop:hover > .dropbutton{
+        width: 93vw;
+    }
+    .drop a{
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .container-button {
+        display: none;
+        position: relative;
+        background-color: rgba(0, 191, 206,1);
+        opacity: 0.9;
+        /* min-width: 218px; */
+        /* box-shadow: 0px 8px 16px 0px rgba(0, 191, 206,1); */
+        z-index: 1;
+        /* margin-left: -1%; */
+        width: 50vw;
+    }
+    .drop:hover .container-button {
+        display: block;
+        width: 93vw;
+    }
+    }
+    /* Navbar mobil fin */
+    
+    /* NAVBAR web*/
+    @media screen and (min-width: 813px) {
+    
+    .cliink{
+        background-size: cover;
+        height: 120px;}
+    
+    .drop{
+        display: none;
+    }
+    }
 
       .titleup {
         padding: 2vh;
@@ -131,7 +213,35 @@
     </style>
   </head>
   <body>
-    <header></header>
+     <header>
+        <div class="cliiink">
+            <img src="./element/logo-terradona.png" alt="logo">
+        </div>
+
+        </div>
+        <div class="drop">
+            <!-- menu drop vers les liens des pages  -->
+            <button class="dropbutton">MENU</button>
+            <div class="container-button small_shadow">
+                <a href="#">Acceuil</a>
+                <a href="#">Principauté de Monaco</a>
+                <a href="#">Communauté d'Agglomération du Pays de Grasse</a>
+                <a href="#">Communauté d'Agglomération Lens-Liévin</a>
+                <a href="#">Communauté de Communes de la Save au Touch</a>
+                <a href="#">Communauté d'Agglomération Roannais Agglomération</a>
+                <a href="#">Communauté de Communes du Pays Réuni d'Orange</a>
+                <a href="#">Communauté d'Agglomération Cannes Pays de Lérins</a>
+                <a href="#">Syndicat du SICTOM de la Région Montluçonnaise</a>
+                <a href="#">Communauté d'Agglomération Durance Luberon Verdon Agglomération</a>
+                <a href="#">Communauté de Communes Normandie Cabourg Pays d'Auge</a>
+                <a href="#">Communauté d'Agglomération Terre de Provence</a>
+                <a href="#">Syndicat du SIDOMRA</a>
+                <a href="#">Communauté Urbaine de Limoges Métropole</a>
+                <a href="#">Communauté d'Agglomération d'Amiens Métropole</a>
+                <a href="#">Syndicat du SIRTOMAD</a>
+            </div>
+        </div>
+    </header>
     <main>
       <div class="center barresearch">
         <label for="commu">Selectionner une collectivité</label>
