@@ -1,10 +1,10 @@
-version: '3'
+version: "3"
 services:
   app:
     build:
       context: ./project
     ports:
-      - "8080:8080"
+      - "3007:3007"
     networks:
       - eco4marseille
 

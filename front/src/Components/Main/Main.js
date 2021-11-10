@@ -1,6 +1,13 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import "../App/App.css";
+import bouteille from "../../element/bouteille.png";
+import panier from "../../element/panier.png";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
+// import { faCalendar } from "@fortawesome/free-solid-svg-icons";
+import "../../../node_modules/font-awesome/css/font-awesome.min.css";
+import "font-awesome/css/font-awesome.min.css";
 
 // <script>
 const axios = require("axios");
@@ -59,7 +66,7 @@ const Main = () => {
     return (
       <div>
         <div>
-          <div class="center barresearch">
+          <div className="center barresearch">
             <form>
               <label for="commu">Selectionner une collectivité</label>
               <select
@@ -120,11 +127,11 @@ const Main = () => {
           </div>
           <div class="datebox col-6 col-sm-6 col-md-6">
             <h2>
-              <i class="fas fa-calendar-alt txt_bleu"></i>{" "}
-              {userData[ip].createdAt} to 10.11.2021
+              <i className="fas fa-arrow-up txt_bleu"></i>
+              de {userData[ip].createdAt} à aujourd'hui
             </h2>
             <h3>
-              <i class="fas fa-box txt_bleu"></i>{" "}
+              <i className="fas fa-arrow-up txt_bleu"></i>
               <span>{userData[ip].nb_boxes}</span> box installées
             </h3>
           </div>
@@ -162,7 +169,7 @@ const Main = () => {
               </div>
             </div>
           </div>
-          <div class="row">
+          <div class="row flex">
             <div class="card col-md-5 col-sm-5 text-center">
               <div class="card-body">
                 <h2 class="card-title">Nombre de dépôts valides</h2>
@@ -182,15 +189,15 @@ const Main = () => {
               </div>
             </div>
           </div>
-          <div class="row col-lg-12 center relatif">
+          <div class="row col-lg-12 center relatif flex">
             <div class="relatif">
               <img
                 class="col-9 relatif"
-                src="./element/bouteille.png"
+                src={bouteille}
                 alt="Tonnes de verre"
-              />
+              />{" "}
             </div>
-            <figcaption class="absolue position_bouteille txt_blanc">
+            <figcaption class="absolue position_bouteille">
               Au total{" "}
               <span class="txt_orange">
                 {" "}
@@ -201,12 +208,12 @@ const Main = () => {
 
             <div class="relatif">
               <img
-                class="col-9 relatif"
-                src="./element/panier.png"
+                class="col-9 relatif panier"
+                src={panier}
                 alt="Nombre de souscription"
-              />
+              />{" "}
             </div>
-            <figcaption class="absolue position_panier txt_blanc">
+            <figcaption class="absolue position_panier">
               <span class="txt_orange">
                 <span>{userData[ip].nb_subscriptions}</span> souscription{" "}
               </span>{" "}
@@ -219,15 +226,15 @@ const Main = () => {
                 Soit <span class="txt_orange">l'économie</span> de
               </h2>
               <p class="card-text">
-                <i class="fas fa-cloud txt_bleu"></i>
+                <i className="fas fa-arrow-up txt_bleu"></i>
                 <span class="txt_bleu"> 707</span> tonnes de CO2
               </p>
               <p class="card-text">
-                <i class="fas fa-tint txt_bleu"></i>
+                <i className="fas fa-arrow-up txt_bleu"></i>
                 <span class="txt_bleu"> 847 000</span> litres d'eau
               </p>
               <p class="card-text">
-                <i class="fas fa-mobile-alt txt_bleu"></i>
+                <i className="fas fa-arrow-up txt_bleu"></i>
                 <span class="txt_bleu"> 989</span> smartphone
               </p>
             </div>

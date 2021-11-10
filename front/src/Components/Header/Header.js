@@ -1,11 +1,13 @@
 import React from "react";
 import "../App/App.css";
+import logo from "../../element/logo-terradona.png";
+
 
 const Header = () => {
   return (
     <header>
       <div class="cliiink">
-        {/* <img src="./element/logo-terradona.png" alt="logo"> */}
+      <img src={logo} alt="logo terradona" />{" "}  
       </div>
       <div class="drop">
         <button class="dropbutton">MENU</button>
