@@ -3,11 +3,20 @@ import { useEffect, useState } from "react";
 import "../App/App.css";
 import bouteille from "../../element/bouteille.png";
 import panier from "../../element/panier.png";
+<<<<<<< HEAD
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 // import { faCalendar } from "@fortawesome/free-solid-svg-icons";
 import "../../../node_modules/font-awesome/css/font-awesome.min.css";
 import "font-awesome/css/font-awesome.min.css";
+=======
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import { faCalendar } from "@fortawesome/free-solid-svg-icons";
+import '../../../node_modules/font-awesome/css/font-awesome.min.css'
+import 'font-awesome/css/font-awesome.min.css'
+
+>>>>>>> 2d3d234b518640e8e7f9be1582570defad072ce5
 
 // <script>
 const axios = require("axios");
@@ -131,7 +140,11 @@ const Main = () => {
               de {userData[ip].createdAt} à aujourd'hui
             </h2>
             <h3>
+<<<<<<< HEAD
               <i className="fas fa-arrow-up txt_bleu"></i>
+=======
+            <i className="fas fa-arrow-up txt_bleu"></i>
+>>>>>>> 2d3d234b518640e8e7f9be1582570defad072ce5
               <span>{userData[ip].nb_boxes}</span> box installées
             </h3>
           </div>
@@ -191,11 +204,15 @@ const Main = () => {
           </div>
           <div class="row col-lg-12 center relatif flex">
             <div class="relatif">
+<<<<<<< HEAD
               <img
                 class="col-9 relatif"
                 src={bouteille}
                 alt="Tonnes de verre"
               />{" "}
+=======
+            <img class="col-9 relatif" src={bouteille} alt="Tonnes de verre" />{" "}  
+>>>>>>> 2d3d234b518640e8e7f9be1582570defad072ce5
             </div>
             <figcaption class="absolue position_bouteille">
               Au total{" "}
@@ -207,11 +224,15 @@ const Main = () => {
             </figcaption>
 
             <div class="relatif">
+<<<<<<< HEAD
               <img
                 class="col-9 relatif panier"
                 src={panier}
                 alt="Nombre de souscription"
               />{" "}
+=======
+            <img class="col-9 relatif panier" src={panier} alt="Nombre de souscription" />{" "}  
+>>>>>>> 2d3d234b518640e8e7f9be1582570defad072ce5
             </div>
             <figcaption class="absolue position_panier">
               <span class="txt_orange">
@@ -226,6 +247,7 @@ const Main = () => {
                 Soit <span class="txt_orange">l'économie</span> de
               </h2>
               <p class="card-text">
+<<<<<<< HEAD
                 <i className="fas fa-arrow-up txt_bleu"></i>
                 <span class="txt_bleu"> 707</span> tonnes de CO2
               </p>
@@ -235,6 +257,17 @@ const Main = () => {
               </p>
               <p class="card-text">
                 <i className="fas fa-arrow-up txt_bleu"></i>
+=======
+              <i className="fas fa-arrow-up txt_bleu"></i>
+                <span class="txt_bleu"> 707</span> tonnes de CO2
+              </p>
+              <p class="card-text">
+              <i className="fas fa-arrow-up txt_bleu"></i>
+                <span class="txt_bleu"> 847 000</span> litres d'eau
+              </p>
+              <p class="card-text">
+              <i className="fas fa-arrow-up txt_bleu"></i>
+>>>>>>> 2d3d234b518640e8e7f9be1582570defad072ce5
                 <span class="txt_bleu"> 989</span> smartphone
               </p>
             </div>
@@ -246,6 +279,7 @@ const Main = () => {
           height="480"
         /> */}
         </section>
+    
       </div>
     );
   } else return "";
